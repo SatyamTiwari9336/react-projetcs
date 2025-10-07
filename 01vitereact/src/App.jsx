@@ -5,6 +5,7 @@ function App() {
     <>
       <Chai />
       <h1>chai aur react</h1>
+      <p>test para</p>
     </>
   );
 }
