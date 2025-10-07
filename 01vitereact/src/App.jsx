@@ -1,5 +1,12 @@
+import Chai from "./chai.jsx";
+
 function App() {
-  return <h1>chai aur react with vite | Satyam</h1>;
+  return (
+    <>
+      <Chai />
+      <h1>chai aur react</h1>
+    </>
+  );
 }
 
 export default App;
