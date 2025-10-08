@@ -5,9 +5,12 @@ function App() {
   let [counter, setCounter] = useState(15);
   // let counter = 15;
   const addvalue = () => {
-    console.log("value added", counter);
-    counter = counter + 1;
-    setCounter(counter);
+    // counter = counter + 1;
+    setCounter(counter + 1);
+  };
+
+  const removevalue = () => {
+    setCounter(counter - 1);
   };
   return (
     <>
@@ -16,7 +19,7 @@ function App() {
       <button onClick={addvalue}>Add Value{counter}</button>
       <br></br>
       <br></br>
-      <button>Remove Value{counter}</button>
+      <button onClick={removevalue}>Remove Value{counter}</button>
       <p>paragraph {counter}</p>
     </>
   );
