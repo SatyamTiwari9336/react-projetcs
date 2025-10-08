@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+  //hook value,function =usestate (initial value)
   let [counter, setCounter] = useState(15);
   // let counter = 15;
   const addvalue = () => {
