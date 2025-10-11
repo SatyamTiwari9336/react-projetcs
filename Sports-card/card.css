@@ -1,3 +1,7 @@
+:root {
+  --backcolor: rgb(240, 248, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +18,23 @@
   max-width: 500px;
   height: 100%;
   display: flex;
-  background-color: aliceblue;
+  background-color: var(--backcolor);
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
+.golden-outline {
+  border: 3px solid gold;
+  border-style: ridge;
+}
+
+.border-part {
+  background-color: #adfa1d;
+  clip-path: path(
+    "M 48,98 A 250,270 0,0,1 148,63 A 250,270 0,0,1 252,98 L 252,352 A 200,200 0,0,0 150,372 A 200,200 0,0,0 48,352 Z"
+  );
+}
+
 .border-part {
   background-color: #adfa1d;
   clip-path: path(
