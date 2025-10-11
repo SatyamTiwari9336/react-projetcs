@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: #000;
+  height: 100vh;
+  width: 100%;
+}
+
+.sub-container {
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card-shape {
+  height: 500px;
+  width: 300px;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: black;
+  clip-path: path(
+    "M 50,100 A 250,270 0,0,1 148,65 A 250,270 0,0,1 250,100 L 250,350 A 200,200 0,0,0 150,370 A 200,200 0,0,0 50,350 Z"
+  );
+}
