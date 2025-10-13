@@ -9,7 +9,7 @@
 }
 
 .container {
-  background: #000;
+  background: var(--backcolor);
   height: 100vh;
   width: 100%;
 }
@@ -29,6 +29,9 @@
   width: 400px;
   display: grid;
   place-items: center;
+  /* clip-path: path(
+    "M 43,93 A 250,270 0,0,1 148,58 A 250,270 0,0,1 257,95 L 257,357 A 200,200 0,0,0 150,377 A 200,200 0,0,0 43,357 Z"
+  ); */
 }
 /* keep colour of transparent and background same for ring effect  */
 
