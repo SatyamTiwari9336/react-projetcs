@@ -30,7 +30,8 @@
   display: grid;
   place-items: center;
 }
-/* keep colour of transparent and background same  */
+/* keep colour of transparent and background same for ring effect  */
+
 .transparent {
   background-color: var(--backcolor);
   height: 80%;
