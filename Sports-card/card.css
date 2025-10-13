@@ -35,7 +35,6 @@
   background-color: var(--backcolor);
   height: 100%;
   width: 500px;
-
   clip-path: path(
     "M 44,94 A 250,270 0,0,1 148,59 A 250,270 0,0,1 256,94 L 256,356 A 200,200 0,0,0 150,376 A 200,200 0,0,0 44,356 Z"
   );
@@ -53,27 +52,8 @@
 .card-shape {
   height: 100%;
   width: 500px;
-
   background: black;
-
   clip-path: path(
     "M 50,100 A 250,270 0,0,1 148,65 A 250,270 0,0,1 250,100 L 250,350 A 200,200 0,0,0 150,370 A 200,200 0,0,0 50,350 Z"
   );
 }
-/* h4 {
-  margin: auto;
-  padding: auto;
-  color: aliceblue;
-}
-.details-part {
-  background-color: var(--backcolor);
-  color: #adfa1d;
-  margin: auto;
-  /* margin-top: 0px;
-  /* padding: 100px; 
-  padding-bottom: 140px;
-}
-.upper-half {
-  background-color: red;
-  margin: auto;
-} */
