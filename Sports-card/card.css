@@ -1,5 +1,5 @@
 :root {
-  --backcolor: rgb(240, 248, 255);
+  --backcolor: #000;
 }
 
 * {
@@ -25,9 +25,21 @@
 }
 .golden-outline {
   background-color: goldenrod;
-  width: 200px;
-  height: 100px;
-  clip-path: path("M 10 50 L 190 50 L 190 60 L 10 60 Z");
+  height: 80%;
+  width: 400px;
+  display: grid;
+  place-items: center;
+}
+/* keep colour of transparent and background same  */
+.transparent {
+  background-color: var(--backcolor);
+  height: 80%;
+  width: 300px;
+  display: grid;
+  place-items: center;
+  clip-path: path(
+    "M 44,94 A 250,270 0,0,1 148,59 A 250,270 0,0,1 256,94 L 256,356 A 200,200 0,0,0 150,376 A 200,200 0,0,0 44,356 Z"
+  );
 }
 
 .border-part {
