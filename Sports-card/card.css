@@ -10,14 +10,14 @@
 
 .sub-container {
   max-width: 300px;
-  height: 60%;
+  height: 70vh;
   background-color: var(--backcolor);
   display: grid;
   place-items: center;
 }
 .golden-outline {
   background-image: linear-gradient(#eeba2b, #b78628);
-  height: 60vh;
+  height: 65vh;
   width: 300px;
   clip-path: path(
     "M 43,93 A 250,270 0,0,1 148,58 A 250,270 0,0,1 257,93 L 257,357 A 200,200 0,0,0 150,377 A 200,200 0,0,0 43,357 Z"
@@ -27,14 +27,14 @@
 
 .transparent {
   background-color: var(--backcolor);
-  height: 60vh;
+  height: 65vh;
   clip-path: path(
     "M 44,94 A 250,270 0,0,1 148,59 A 250,270 0,0,1 256,94 L 256,356 A 200,200 0,0,0 150,376 A 200,200 0,0,0 44,356 Z"
   );
 }
 
 .border-part {
-  height: 60vh;
+  height: 65vh;
   background-color: #adfa1d;
   clip-path: path(
     "M 48,98 A 250,270 0,0,1 148,63 A 250,270 0,0,1 252,98 L 252,352 A 200,200 0,0,0 150,372 A 200,200 0,0,0 48,352 Z"
@@ -42,7 +42,7 @@
 }
 
 .card-shape {
-  height: 50vh;
+  height: 65vh;
   width: 300px;
 
   background: black;
@@ -53,10 +53,10 @@
   flex-direction: column;
 }
 .User-image {
-  background-color: aqua;
+  background-color: rgb(0, 0, 0);
   position: relative;
   margin-top: 30px;
-  flex: 0.9;
+  flex: 1;
 }
 .card-details {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -64,30 +64,5 @@
   color: #adfa1d;
   background-color: var(--backcolor);
   flex: 0;
-  display: grid;
-  place-items: center;
-}
-.name {
-  font-weight: 600;
-  margin-bottom: 2px;
-  z-index: 2;
-}
-.dash {
-  margin-top: -20px;
-  font-weight: 900;
-  z-index: 1;
-}
-.matches {
-}
-.won {
-}
-.lost {
-}
-.rank {
-}
-.tournaments {
-}
-.str-dash {
-  font-size: xx-large;
-  margin-top: -55px;
+  display: flex;
 }

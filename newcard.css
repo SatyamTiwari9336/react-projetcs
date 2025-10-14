@@ -1,0 +1,51 @@
+:root {
+  --backcolor: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 70vh;
+  max-width: 500px;
+  background-color: var(--backcolor);
+  display: grid;
+  place-items: center;
+}
+.golden {
+  height: 100%;
+  width: 80%;
+  background-image: linear-gradient(#eeba2b, #b78628);
+}
+
+.transparent {
+  height: 100%;
+  width: 100%;
+  background-color: var(--backcolor);
+}
+.card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--backcolor);
+}
+.img {
+  flex: 0.4;
+  border: 2px solid red;
+  color: white;
+  padding: 20%;
+}
+.name {
+  flex: 0.2;
+  border: 2px solid gold;
+  color: white;
+}
+.details {
+  flex: 0.4;
+  border: 2px solid blue;
+  color: white;
+  padding: 10%;
+}
