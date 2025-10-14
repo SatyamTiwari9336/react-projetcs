@@ -9,8 +9,8 @@
 }
 
 .sub-container {
-  max-width: 500px;
-  height: 60vh;
+  max-width: 300px;
+  height: 60%;
   background-color: var(--backcolor);
   display: grid;
   place-items: center;
@@ -18,7 +18,7 @@
 .golden-outline {
   background-image: linear-gradient(#eeba2b, #b78628);
   height: 60vh;
-  width: 500px;
+  width: 300px;
   clip-path: path(
     "M 43,93 A 250,270 0,0,1 148,58 A 250,270 0,0,1 257,93 L 257,357 A 200,200 0,0,0 150,377 A 200,200 0,0,0 43,357 Z"
   );
@@ -42,7 +42,7 @@
 }
 
 .card-shape {
-  height: 60vh;
+  height: 50vh;
   width: 300px;
 
   background: black;
@@ -56,13 +56,38 @@
   background-color: aqua;
   position: relative;
   margin-top: 30px;
-  flex: 1;
+  flex: 0.9;
 }
 .card-details {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding-top: 30%;
   color: #adfa1d;
   background-color: var(--backcolor);
-  flex: content;
+  flex: 0;
+  display: grid;
+  place-items: center;
+}
+.name {
+  font-weight: 600;
+  margin-bottom: 2px;
+  z-index: 2;
+}
+.dash {
+  margin-top: -20px;
+  font-weight: 900;
+  z-index: 1;
+}
+.matches {
+}
+.won {
+}
+.lost {
+}
+.rank {
+}
+.tournaments {
+}
+.str-dash {
+  font-size: xx-large;
+  margin-top: -55px;
 }
