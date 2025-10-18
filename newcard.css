@@ -10,7 +10,6 @@
 .container {
   height: 60vh;
   max-width: 90vw;
-  background-color: var(--backcolor);
   display: grid;
   place-items: center;
 }
@@ -31,6 +30,7 @@
     "M 19 54 A 250,270 0,0,1 180,2 A 250,270 0,0,1 351 54 L 351 526 A 200,200 0,0,0 180,576 A 200,200 0,0,0 19 526 Z"
   );
 }
+
 .border-part {
   height: 100%;
   width: 100%;
