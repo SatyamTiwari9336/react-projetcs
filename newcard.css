@@ -51,6 +51,7 @@
     "M 25 60 A 250,270 0,0,1 180,6 A 250,270 0,0,1 345 60 L 345 520 A 200,200 0,0,0 180,570 A 200,200 0,0,0 25 520 Z"
   );
 }
+
 .img {
   flex: 0.4;
   /* border: 2px solid red; */
@@ -59,6 +60,7 @@
   padding-left: 20%;
   padding-right: 20%;
 }
+
 .name {
   flex: 0.1;
   /* border: 2px solid gold; */
