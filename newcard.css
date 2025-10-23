@@ -8,8 +8,8 @@
 }
 
 .container {
-  height: 60vh;
-  max-width: 90vw;
+  height: 400px;
+  max-width: 200px;
   display: grid;
   place-items: center;
 }
@@ -17,27 +17,27 @@
   height: 100%;
   width: 100%;
   background-color: #eeba2b;
-  clip-path: path(
+  /* clip-path: path(
     "M 17 54 A 250,270 0,0,1 180,0 A 250,270 0,0,1 353 52 L 353 528 A 200,200 0,0,0 180,578 A 200,200 0,0,0 17 528 Z"
-  );
+  ); */
 }
 
 .transparent {
   height: 100%;
   width: 100%;
   background-color: var(--backcolor);
-  clip-path: path(
+  /* clip-path: path(
     "M 19 54 A 250,270 0,0,1 180,2 A 250,270 0,0,1 351 54 L 351 526 A 200,200 0,0,0 180,576 A 200,200 0,0,0 19 526 Z"
-  );
+  ); */
 }
 
 .border-part {
   height: 100%;
   width: 100%;
   background-color: #adfa1d;
-  clip-path: path(
+  /* clip-path: path(
     "M 23 58 A 250,270 0,0,1 180,4 A 250,270 0,0,1 347 58 L 347 522 A 200,200 0,0,0 180,572 A 200,200 0,0,0 23 522 Z"
-  );
+  ); */
 }
 .card {
   height: 100%;
@@ -47,14 +47,14 @@
   background-color: var(--backcolor);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  clip-path: path(
+  /* clip-path: path(
     "M 25 60 A 250,270 0,0,1 180,6 A 250,270 0,0,1 345 60 L 345 520 A 200,200 0,0,0 180,570 A 200,200 0,0,0 25 520 Z"
-  );
+  ); */
 }
 
 .img {
   flex: 0.4;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   color: white;
   padding-top: 10%;
   padding-left: 20%;
@@ -63,7 +63,7 @@
 
 .name {
   flex: 0.1;
-  /* border: 2px solid gold; */
+  border: 2px solid gold;
   color: #adfa1d;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@
   font-weight: 600;
 }
 .nameplayer {
-  font-size: xx-large;
+  font-size: large;
 }
 
 .dash {
@@ -81,7 +81,7 @@
 }
 .details {
   flex: 0.5;
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   color: white;
 
   padding-bottom: 15%;
@@ -94,10 +94,10 @@
   flex: 0.5;
   display: flex;
   flex-direction: column;
-  gap: 30%;
+  gap: 10px;
   align-items: center;
   color: #adfa1d;
-  font-size: x-large;
+  font-size: large;
 }
 .details-right {
   flex: 0.5;
@@ -105,7 +105,7 @@
   flex-direction: column;
   gap: 10%;
   color: #adfa1d;
-  font-size: x-large;
+  font-size: large;
   align-items: center;
 }
 .img {
