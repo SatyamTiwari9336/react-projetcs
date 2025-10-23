@@ -5,10 +5,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
 .container {
-  height: 400px;
+  height: 350px;
   max-width: 200px;
   display: grid;
   place-items: center;
@@ -53,7 +60,7 @@
 }
 
 .img {
-  flex: 0.4;
+  flex: 0.5;
   border: 2px solid red;
   color: white;
   padding-top: 10%;
@@ -80,10 +87,9 @@
   font-weight: bolder;
 }
 .details {
-  flex: 0.5;
+  flex: 0.4;
   border: 2px solid blue;
   color: white;
-
   padding-bottom: 15%;
   padding-top: 5%;
   display: flex;
