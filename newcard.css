@@ -24,27 +24,27 @@ body {
   height: 100%;
   width: 100%;
   background-color: #eeba2b;
-  /* clip-path: path(
-    "M 17 54 A 250,270 0,0,1 180,0 A 250,270 0,0,1 353 52 L 353 528 A 200,200 0,0,0 180,578 A 200,200 0,0,0 17 528 Z"
-  ); */
+  clip-path: path(
+    "M 9,34 A 250,270 0,0,1 100,-2 A 250,270 0,0,1 191,34 L 191,306 A 200,200 0,0,0 100,352 A 200,200 0,0,0 9,306 Z"
+  );
 }
 
 .transparent {
   height: 100%;
   width: 100%;
   background-color: var(--backcolor);
-  /* clip-path: path(
-    "M 19 54 A 250,270 0,0,1 180,2 A 250,270 0,0,1 351 54 L 351 526 A 200,200 0,0,0 180,576 A 200,200 0,0,0 19 526 Z"
-  ); */
+  clip-path: path(
+    "M 9,34 A 250,270 0,0,1 100,-2 A 250,270 0,0,1 191,34 L 191,306 A 200,200 0,0,0 100,352 A 200,200 0,0,0 9,306 Z"
+  );
 }
 
 .border-part {
   height: 100%;
   width: 100%;
   background-color: #adfa1d;
-  /* clip-path: path(
-    "M 23 58 A 250,270 0,0,1 180,4 A 250,270 0,0,1 347 58 L 347 522 A 200,200 0,0,0 180,572 A 200,200 0,0,0 23 522 Z"
-  ); */
+  clip-path: path(
+    "M 13,38 A 250,270 0,0,1 100,2 A 250,270 0,0,1 187,38 L 187,302 A 200,200 0,0,0 100,348 A 200,200 0,0,0 13,302 Z"
+  );
 }
 .card {
   height: 100%;
@@ -55,7 +55,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   clip-path: path(
-    "M 15,40 A 250,270 0,0,1 100,4 A 250,270 0,0,1 185,40 L 185,300 A 200,200 0,0,0 100,350 A 200,200 0,0,0 15,300 Z"
+    "M 15,40 A 250,270 0,0,1 100,4 A 250,270 0,0,1 185,40 L 185,300 A 200,200 0,0,0 100,346 A 200,200 0,0,0 15,300 Z"
   );
 }
 
