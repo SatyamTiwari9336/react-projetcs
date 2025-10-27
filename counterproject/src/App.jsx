@@ -6,14 +6,14 @@ function App() {
   let [counter, setCounter] = useState(15);
   // let counter = 15;
   const addvalue = () => {
-    if (counter < 21) {
+    if (counter < 20) {
       // counter = counter + 1;
       setCounter(counter + 1);
     }
   };
 
   const removevalue = () => {
-    if (counter > -1) {
+    if (counter > 0) {
       setCounter(counter - 1);
     }
   };
