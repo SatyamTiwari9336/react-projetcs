@@ -1,9 +1,8 @@
 import React from "react";
 
-function Card({ Username, userinfo }) {
+function Card({ Username, userinfo = "info about the card  " }) {
   // console.log("props", props);
   console.log(Username);
-
   return (
     <div className="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl">
       <img
