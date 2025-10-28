@@ -2,10 +2,11 @@ import "./App.css";
 import Card from "./components/Card";
 
 function App() {
-  // let myObj = {
-  //   name: "satyam",
-  //   age: 21,
-  // };
+  let myObj = {
+    name: "satyam",
+    age: 21,
+    info: "he is a great guy",
+  };
   // let newArr = [1, 2, 3, 4];
   return (
     <>
@@ -13,7 +14,8 @@ function App() {
         Hello world!
       </h1>
       <Card Username="chaiaurcode" userinfo={"it is a youtube channel"} />
-      <Card Username="Satyam" /> {/*default value is given*/}
+      <Card Username="Satyam" userinfo={myObj.info} />
+      {/*default value is given when userinfo is not passed here */}
     </>
   );
 }
