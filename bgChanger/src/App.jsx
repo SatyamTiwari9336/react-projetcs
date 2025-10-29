@@ -4,13 +4,45 @@ function App() {
   const [Color, setColor] = useState("olive");
 
   return (
-    <>
-      <div className="w-full h-screen" style={{ backgroundColor: Color }}>
-        <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-4">
-          test
-        </div>
+    <div className="w-screen h-screen" style={{ backgroundColor: Color }}>
+      <div className="fixed flex flex-wrap justify-center bottom-12 rounded-xl inset-x-0  gap-40 bg-blue-950 ">
+        <button
+          onClick={() => setColor("orange")}
+          className="bg-orange-500 p-4"
+          style={{ backgroundColor: "orange " }}
+        >
+          orange
+        </button>
+        <button
+          onClick={() => setColor("red")}
+          className=" p-4"
+          style={{ backgroundColor: "red " }}
+        >
+          red
+        </button>
+        <button
+          onClick={() => setColor("green")}
+          className=" p-4"
+          style={{ backgroundColor: "green " }}
+        >
+          green
+        </button>
+        <button
+          onClick={() => setColor("black")}
+          className=" p-4"
+          style={{ backgroundColor: "black " }}
+        >
+          black
+        </button>
+        <button
+          onClick={() => setColor("pink")}
+          className=" p-4"
+          style={{ backgroundColor: "pink " }}
+        >
+          pink
+        </button>
       </div>
-    </>
+    </div>
   );
 }
 
