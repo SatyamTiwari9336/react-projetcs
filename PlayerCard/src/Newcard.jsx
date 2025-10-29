@@ -1,8 +1,7 @@
 import React from "react";
 import "./newcard.css"; // link your CSS file
-import playerImg from "./player_img.png";
 
-function NewCard({ matches, won, lost, events, rank }) {
+function NewCard({ playerimg, playername, matches, won, lost, events, rank }) {
   return (
     <div className="container">
       <div className="golden">
@@ -10,11 +9,11 @@ function NewCard({ matches, won, lost, events, rank }) {
           <div className="border-part">
             <div className="card">
               <div className="img">
-                <img src={playerImg} height={150} width={100} alt="player" />
+                <img src={playerimg} height={150} width={100} alt="player" />
               </div>
 
               <div className="name">
-                <p className="nameplayer">SATYAM</p>
+                <p className="nameplayer">{playername}</p>
                 <p className="dash">_________________</p>
               </div>
 
