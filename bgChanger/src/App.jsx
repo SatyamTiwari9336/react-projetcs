@@ -8,17 +8,17 @@ function App() {
       <div className="fixed flex flex-wrap justify-center bottom-12 rounded-xl inset-x-0  gap-40 bg-blue-950 ">
         <button
           onClick={() => setColor("orange")}
-          className="bg-orange-500 p-4"
+          className="p-4"
           style={{ backgroundColor: "orange " }}
         >
           orange
         </button>
         <button
-          onClick={() => setColor("red")}
+          onClick={() => setColor("violet")}
           className=" p-4"
-          style={{ backgroundColor: "red " }}
+          style={{ backgroundColor: "violet " }}
         >
-          red
+          violet
         </button>
         <button
           onClick={() => setColor("green")}
