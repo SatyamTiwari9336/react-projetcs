@@ -25,7 +25,7 @@ function App() {
         label="length"
       ></input>
       <label className="text-3xl pl-2 " htmlFor="passlen">
-        ⬅️PassWord Length : {length}
+        ⬅️PassWord-Length : {length}
       </label>
       <br></br>
       <input type="checkbox" id="numallowed" className="size-6 mt-10" />
