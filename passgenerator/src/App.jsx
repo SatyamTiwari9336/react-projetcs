@@ -1,10 +1,12 @@
 import "./App.css";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 function App() {
   const [length, setlength] = useState(15);
   const [numberallow, setnumber] = useState(false);
   const [charallow, setchar] = useState(false);
   const [password, setpassword] = useState("");
+
+  const passref = useRef(null);
   const passwordgenerator = useCallback(() => {
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     let pass = "";
@@ -17,7 +19,14 @@ function App() {
     setpassword(pass);
   }, [length, numberallow, charallow, setpassword]);
 
+  const copypasstoclipboard = useCallback(() => {
+    passref.current?.select();
+    // passref.current?.setSelectionRange(0, 8);
+    window.navigator.clipboard.writeText(password);
+  }, [password]);
+
   useEffect(passwordgenerator, [length, charallow, numberallow, setpassword]);
+
   return (
     <>
       <h1 className=" text-white text-4xl text-center ">Password Generator</h1>
@@ -28,9 +37,12 @@ function App() {
           className="m-5 border-4  bg-gray-500 justify-around text-4xl py-4 px-6 text-center rounded-3xl"
           value={password}
           readOnly
+          ref={passref}
           placeholder="Password"
         ></input>
-        <button className="">Copy</button>
+        <button onClick={copypasstoclipboard} className="">
+          Copy
+        </button>
         <br></br>
         <input
           onChange={(e) => {
