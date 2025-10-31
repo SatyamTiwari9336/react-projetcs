@@ -21,10 +21,9 @@ function App() {
 
   const copypasstoclipboard = useCallback(() => {
     passref.current?.select();
-    // passref.current?.setSelectionRange(0, 8);
+    // passref.current?.setSelectionRange(0, 6);
     window.navigator.clipboard.writeText(password);
   }, [password]);
-
   useEffect(passwordgenerator, [length, charallow, numberallow, setpassword]);
 
   return (
