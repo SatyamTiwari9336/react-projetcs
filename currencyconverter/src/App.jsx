@@ -3,7 +3,11 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1 className="bg-blue-600">SATYAM</h1>
+      <body className="flex justify-center items-center bg-gray-1000"></body>
+      <h1 className=" text-aliceblue font-bold font-serif -mt-90">
+        Currency Converter
+      </h1>
+      <div></div>
     </>
   );
 }
