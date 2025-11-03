@@ -1,14 +1,47 @@
-import "./App.css";
+import InputBox from "./Components/Inputbox";
+import BackgroundImage from "./finance.jpg";
 
 function App() {
   return (
-    <>
-      <body className="flex justify-center items-center bg-gray-1000"></body>
-      <h1 className=" text-aliceblue font-bold font-serif -mt-90">
-        Currency Converter
-      </h1>
-      <div></div>
-    </>
+    <div className="flex justify-center items-center">
+      <div
+        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: `url('${BackgroundImage}')`,
+        }}
+      >
+        <div className="w-full">
+          <div className="w-screen max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+              }}
+            >
+              <div className="w-full mb-1">
+                <InputBox label="From" />
+              </div>
+              <div className="relative w-full h-0.5">
+                <button
+                  type="button"
+                  className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
+                >
+                  swap
+                </button>
+              </div>
+              <div className="w-full mt-1 mb-4">
+                <InputBox label="To" />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg"
+              >
+                Convert
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 
