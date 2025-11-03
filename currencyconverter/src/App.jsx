@@ -21,6 +21,7 @@ function App() {
   const convert = () => {
     setConvertedAmount(amount * currencyinfo[to]);
   };
+
   return (
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
@@ -52,7 +53,7 @@ function App() {
                 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
                 onClick={swap}
               >
-                swap
+                SWAP
               </button>
             </div>
             <div className="w-full mt-1 mb-4">
