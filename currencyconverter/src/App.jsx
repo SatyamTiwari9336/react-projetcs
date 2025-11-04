@@ -4,7 +4,7 @@ import BackgroundImage from "./finance.jpg";
 import useCurrencyInfo from "./hooks/Usecurrencyinfo";
 
 function App() {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(1);
   const [from, setfrom] = useState("usd");
   const [to, setTo] = useState("inr");
   const [ConvertedAmount, setConvertedAmount] = useState(0);
@@ -64,7 +64,7 @@ function App() {
                 onCurrencyChange={(currency) => {
                   setTo(currency);
                 }}
-                selectcurrency={from}
+                selectcurrency={to}
                 amountDisable
               />
             </div>
