@@ -7,6 +7,7 @@ function App() {
     age: 21,
     info: "he is a great guy",
   };
+  // const name2 = prompt("what is you name "); //runs twice due to strict mode and to avoid use usestate and useeffect
   // let newArr = [1, 2, 3, 4];
   return (
     <>
@@ -14,7 +15,7 @@ function App() {
         Hello world!
       </h1>
       <Card Username="chaiaurcode" userinfo={"it is a youtube channel"} />
-      <Card Username="Satyam" userinfo={myObj.info} />
+      <Card Username={"Satyam"} userinfo={myObj.info} />
       {/*default value is given when userinfo is not passed here */}
     </>
   );
