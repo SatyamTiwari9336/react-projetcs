@@ -10,7 +10,7 @@ function App() {
           <button
             onClick={() => setColor("orange")}
             className="p-4"
-            style={{ backgroundColor: "orange " }}
+            style={{ backgroundColor: "orange" }}
           >
             orange
           </button>
