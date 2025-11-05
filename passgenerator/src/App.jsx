@@ -2,8 +2,8 @@ import "./App.css";
 import { useState, useEffect, useCallback, useRef } from "react";
 function App() {
   const [length, setlength] = useState(15);
-  const [numberallow, setnumber] = useState(false);
-  const [charallow, setchar] = useState(false);
+  const [numberallow, setnumberallow] = useState(false);
+  const [charallow, setcharallow] = useState(false);
   const [password, setpassword] = useState("");
 
   const passref = useRef(null);
@@ -61,7 +61,7 @@ function App() {
         <br></br>
         <input
           onChange={() => {
-            setnumber((prev) => !prev);
+            setnumberallow((prev) => !prev);
           }}
           type="checkbox"
           id="numallowed"
@@ -73,7 +73,7 @@ function App() {
         <input
           onChange={() => {
             // console.log(charallow);
-            setchar((prev) => !prev);
+            setcharallow((prev) => !prev);
           }}
           type="checkbox"
           id="charallowed"
