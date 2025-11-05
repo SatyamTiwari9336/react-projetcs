@@ -6,7 +6,7 @@ function App() {
     <>
       <Chai />
       <h1>chai aur react {username === "Satyam" ? "good" : "shubham"}</h1>
-      <p>test para</p>
+      <p>testing para</p>
     </>
   );
 }
