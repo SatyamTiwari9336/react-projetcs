@@ -16,7 +16,7 @@ function App() {
     if (counter > 0) {
       setCounter(counter - 1);
     } else {
-      alert("Calm Down mate vaalaue is Already 0");
+      alert("Calm Down mate value is Already 0");
     }
   };
   return (
