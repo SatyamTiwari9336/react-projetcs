@@ -15,6 +15,8 @@ function App() {
   const removevalue = () => {
     if (counter > 0) {
       setCounter(counter - 1);
+    } else {
+      alert("Calm Down mate vaalaue is Already 0");
     }
   };
   return (
