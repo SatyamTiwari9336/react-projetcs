@@ -17,7 +17,7 @@ function App() {
       />
       <NewCard
         playerimg={Satyam2}
-        playername={"Messi"}
+        playername={"Ronaldo"}
         matches={30}
         won={24}
         lost={6}
