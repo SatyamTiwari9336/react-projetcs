@@ -16,18 +16,34 @@ function App() {
     <form onSubmit={handleSubmit(onsubmit)}>
       <div>
         <label>First Name:</label>
-        <input {...register("firstName", { required: true })} />
-        {/*cant submit until value filled */}
+        <input
+          className={errors.firstName ? "input-error" : ""}
+          {...register("firstName", {
+            required: true,
+            minLength: { value: 3, message: "min length is 3" },
+            maxLength: { value: 10, message: "max length is 10" },
+          })}
+        />
+        {errors.firstName && (
+          <p className="error-msg">{errors.firstName.message}</p>
+        )}
+        {/*cant submit until value filled  and min length 3 */}
       </div>
       <br />
       <div>
         <label>Middle name:</label>
-        <input {...register("middle name")} />
+        <input
+          className={errors.middleName ? "input-error" : ""}
+          {...register("middleName")}
+        />
       </div>
       <br />
       <div>
         <label>Last Name:</label>
-        <input {...register("lastname")} />
+        <input
+          className={errors.middleName ? "input-error" : ""}
+          {...register("lastName")}
+        />
       </div>
       <br />
       <input type="submit" />
