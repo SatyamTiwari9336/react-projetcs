@@ -6,10 +6,12 @@ function App() {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
 
-  function onsubmit(data) {
+  async function onsubmit(data) {
+    //simulate we api call
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     console.log("submit the form ", data);
   }
   return (
@@ -41,12 +43,24 @@ function App() {
       <div>
         <label>Last Name:</label>
         <input
-          className={errors.middleName ? "input-error" : ""}
-          {...register("lastName")}
+          className={errors.lastName ? "input-error" : ""}
+          {...register("lastName", {
+            pattern: {
+              value: /^[A-Za-z]+$/i,
+              message: "LAst name is not as per the rules",
+            },
+          })}
         />
+        {errors.lastName && (
+          <p className="error-msg">{errors.lastName.message}</p>
+        )}
       </div>
       <br />
-      <input type="submit" />
+      <input
+        type="submit"
+        disabled={isSubmitting}
+        value={isSubmitting ? "Submitting..." : "Submit"}
+      />
     </form>
   );
 }
