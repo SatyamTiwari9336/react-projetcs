@@ -22,8 +22,8 @@ function App() {
           className={errors.firstName ? "input-error" : ""}
           {...register("firstName", {
             required: true,
-            minLength: { value: 3, message: "min length is 3" },
-            maxLength: { value: 10, message: "max length is 10" },
+            minLength: { value: 3, message: "Min length is 3" },
+            maxLength: { value: 10, message: "Max length is 10" },
           })}
         />
         {errors.firstName && (
@@ -59,7 +59,7 @@ function App() {
       <input
         type="submit"
         disabled={isSubmitting}
-        value={isSubmitting ? "Submitting..." : "Submit"}
+        value={isSubmitting ? "Submitting.." : "Submit"}
       />
     </form>
   );
