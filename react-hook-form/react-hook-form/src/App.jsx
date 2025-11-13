@@ -12,7 +12,7 @@ function App() {
   async function onsubmit(data) {
     //simulate we api call
     await new Promise((resolve) => setTimeout(resolve, 3000));
-    console.log("submit the form ", data);
+    console.log("Submit the form ", data);
   }
   return (
     <form onSubmit={handleSubmit(onsubmit)}>
@@ -47,7 +47,7 @@ function App() {
           {...register("lastName", {
             pattern: {
               value: /^[A-Za-z]+$/i,
-              message: "LAst name is not as per the rules",
+              message: "Last name is not as per the rules",
             },
           })}
         />
