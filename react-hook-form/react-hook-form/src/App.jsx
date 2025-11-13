@@ -17,7 +17,7 @@ function App() {
   return (
     <form onSubmit={handleSubmit(onsubmit)}>
       <div>
-        <label>First Name:</label>
+        <label>First-Name:</label>
         <input
           className={errors.firstName ? "input-error" : ""}
           {...register("firstName", {
@@ -33,7 +33,7 @@ function App() {
       </div>
       <br />
       <div>
-        <label>Middle name:</label>
+        <label>Middle-name:</label>
         <input
           className={errors.middleName ? "input-error" : ""}
           {...register("middleName")}
@@ -41,7 +41,7 @@ function App() {
       </div>
       <br />
       <div>
-        <label>Last Name:</label>
+        <label>Last-Name:</label>
         <input
           className={errors.lastName ? "input-error" : ""}
           {...register("lastName", {
