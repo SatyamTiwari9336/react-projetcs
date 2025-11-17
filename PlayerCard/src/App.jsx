@@ -8,20 +8,20 @@ function App() {
     <div>
       <NewCard
         playerimg={SatyamImg}
-        playername={"Satyam"}
-        matches={20}
+        playername={"Satyam plays"}
+        matches={22}
         won={12}
         lost={8}
         events={6}
-        rank={22}
+        rank={20}
       />
       <NewCard
         playerimg={Satyam2}
-        playername={"Ronaldo"}
-        matches={30}
-        won={24}
-        lost={6}
-        events={13}
+        playername={"Messi"}
+        matches={300}
+        won={245}
+        lost={55}
+        events={130}
         rank={1}
       />
     </div>
