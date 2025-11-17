@@ -8,9 +8,9 @@ function App() {
     <div>
       <NewCard
         playerimg={SatyamImg}
-        playername={"Satyam plays"}
+        playername={"Satyam"}
         matches={22}
-        won={12}
+        won={14}
         lost={8}
         events={6}
         rank={20}
