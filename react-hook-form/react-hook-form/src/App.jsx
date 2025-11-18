@@ -17,7 +17,7 @@ function App() {
   return (
     <form onSubmit={handleSubmit(onsubmit)}>
       <div>
-        <label>First-Name:</label>
+        <label>First--Name:</label>
         <input
           className={errors.firstName ? "input-error" : ""}
           {...register("firstName", {
