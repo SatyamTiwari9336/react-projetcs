@@ -59,7 +59,7 @@ function App() {
       <input
         type="submit"
         disabled={isSubmitting}
-        value={isSubmitting ? "Submitting.." : "Submit"}
+        value={isSubmitting ? "Submitting..." : "Submitt"}
       />
     </form>
   );
