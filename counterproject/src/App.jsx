@@ -22,14 +22,14 @@ function App() {
   return (
     <>
       {/*this is a comment and cant be written otherwise in react jsx */}
-      <h1>Chais Aur Reacts</h1>
+      <h1>Chai Aur React</h1>
       <h2>Counter Values :{counter}</h2>
       <button onClick={addvalue}>Add Value{counter}</button>
 
       <br></br>
       <br></br>
-      <button onClick={removevalue}>Removes Value{counter}</button>
-      <p>paragraphs {counter}</p>
+      <button onClick={removevalue}>Remove Value{counter}</button>
+      <p>paragraph {counter}</p>
     </>
   );
 }
