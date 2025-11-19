@@ -15,18 +15,18 @@ function App() {
             pink
           </button>
           <button
-            onClick={() => setColor("green")}
-            className=" p-4"
-            style={{ backgroundColor: "green " }}
-          >
-            green
-          </button>
-          <button
             onClick={() => setColor("black")}
             className=" p-4"
             style={{ backgroundColor: "black " }}
           >
             black
+          </button>
+          <button
+            onClick={() => setColor("green")}
+            className=" p-4"
+            style={{ backgroundColor: "green " }}
+          >
+            green
           </button>
           <button
             onClick={() => setColor("orange")}
