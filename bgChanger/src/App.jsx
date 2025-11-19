@@ -8,11 +8,11 @@ function App() {
       <div className="fixed flex flex-wrap justify-center bottom-12 rounded-xl inset-x-0  ">
         <div className="flex flex-wrap justify-center px-20 rounded-xl inset-x-0 gap-40 bg-blue-950 ">
           <button
-            onClick={() => setColor("orange")}
+            onClick={() => setColor("pink")}
             className="p-4"
-            style={{ backgroundColor: "orange" }}
+            style={{ backgroundColor: "pink" }}
           >
-            orange
+            pink
           </button>
           <button
             onClick={() => setColor("green")}
@@ -29,11 +29,11 @@ function App() {
             black
           </button>
           <button
-            onClick={() => setColor("pink")}
+            onClick={() => setColor("orange")}
             className=" p-4"
-            style={{ backgroundColor: "pink " }}
+            style={{ backgroundColor: "orange " }}
           >
-            pink
+            orange
           </button>
         </div>
       </div>
