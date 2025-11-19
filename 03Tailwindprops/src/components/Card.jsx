@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({ Username, userinfo = "info about the card  " }) {
+function Card({ Username, userinfo = "info about the cards  " }) {
   // console.log("props", props);
   console.log(Username);
   return (
