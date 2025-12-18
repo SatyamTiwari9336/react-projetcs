@@ -5,7 +5,7 @@ function App() {
   let myObj = {
     name: "satyam",
     age: 21,
-    info: "he is a great guyssss",
+    info: "he is a great guy",
   };
   // const name2 = prompt("what is you name "); //runs twice due to strict mode and to avoid use usestate and useeffect
   // let newArr = [1, 2, 3, 4];
